@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!--Se añaden los links de recursos necesarios para la pagina-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | FUTURE ENERGY DRINK</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <!--Diferentes favicones para diferentes dispositivos-->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>FUTURE</h1>
+        </div>
+        <nav>
+           <ul class="nav-links"> <!--menu-->
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Galeria.html">Galeria</a></li>
+                <li><a href="Ubicacion.html">Ubicacion</a></li>
+           </ul>            
+        </nav>
+        <a class="btn" href="Registro.html"><button>Inicio de sesion</button></a>
+    </header>
+
+   <main>
+<!--carrusel-->
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="https://dr.savee-cdn.com/things/6/2/fe924344617b7a94e099ba.webp" class="d-block w-100 c-img" alt="Slide 1">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="mt-5 fs-3 text-uppercase"></p>
+              <h1 class="display-1 fw-bolder text-capitalize">SIENTE</h1>
+              <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Más informacion</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="https://dr.savee-cdn.com/things/6/2/fe926144617b7a94e09cff.webp" class="d-block w-100 c-img" alt="Slide 2">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="text-uppercase fs-3 mt-5"></p>
+              <p class="display-1 fw-bolder text-capitalize">LA</p>
+              <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                data-bs-target="#booking-modal">Más informacion</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="https://dr.savee-cdn.com/things/6/2/fe924c44617b7a94e09afd.webp" class="d-block w-100 c-img" alt="Slide 3">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="text-uppercase fs-3 mt-5"></p>
+              <p class="display-1 fw-bolder text-capitalize">ENERGIA</p>
+              <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                data-bs-target="#booking-modal">Más informacion</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+<div class="tarjeta">
+   
+</div>
+   </main>
+
+    <footer class="footer"><!--footer-->
+        <div class="footer__addr">
+          <h1 class="footer__logo">Nosotros</h1>
+      
+          <h2>Direccion</h2>
+      
+          <address>
+            Av. Eugenio Garza Sada #101 Aguascalientes, Ags. <br>
+      
+            <a class="footer__btn" href="mailto:axel.mds2202@gmail.com">Contactanos!</a><!--boton para enviar el correo-->
+          </address>
+        </div>
+      <!--diferentes apartados complementarios-->
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Recompensas</h2>
+      
+            <ul class="nav__ul">
+              <li>
+                <a href="Registro.html">Unete ahora</a>
+              </li>
+      
+              <li>
+                <a href="Productos.html">Acerca de</a>
+              </li>
+      
+              <li>
+                <a href="Registro.html">Cuenta</a>
+              </li>
+            </ul>
+          </li>
+      
+          <li class="nav__item">
+            <h2 class="nav__title">Noticias e informacion</h2>
+      
+            <ul class="nav__ul">
+              <li>
+                <a href="Productos.html">Drops</a>
+              </li>
+      
+              <li>
+                <a href="Productos.html">Nuestros productos</a>
+              </li>
+      
+              <li>
+                <a href="Productos.html">Sopprte de productos</a>
+              </li>
+      
+              <li>
+                <a href="Productos.html">Productos</a>
+              </li>
+      
+              <li>
+                <a href="Productos.html">Registrar productos</a>
+              </li>
+            </ul>
+          </li>
+      
+          <li class="nav__item">
+            <h2 class="nav__title">Sucursales</h2>
+      
+            <ul class="nav__ul">
+              <li>
+                <a href="Ubicacion.html">Ubicacion</a>
+              </li>
+      
+              <li>
+                <a href="Ubicacion.html">Mapa</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      
+        <div class="legal">
+          <p>&copy; 2022 Copyright.</p>
+      
+        </div>
+      </footer>
+</body>
+</html>
