@@ -19,7 +19,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   overflow: hidden;
 }
-
+/*Diseño general al apartado del contenido*/
 .container {
   width: 700px;
   height: 400px;
@@ -29,7 +29,7 @@ body {
   grid-template: 100%/50% 50%;
   box-shadow: 2px 2px 10px 0 rgba(51, 51, 51, 0.2);
 }
-
+/*Diferentes tarjetas para iniciar sesion y registrarse*/
 .message {
   position: absolute;
   background-color: #f2eee3;
@@ -39,6 +39,7 @@ body {
   transform: translateX(100%);
   z-index: 4;
 }
+/*Diseño de las tarjetas dependiendo del evento*/
 .message:before {
   position: absolute;
   content: "";
@@ -106,7 +107,7 @@ form input:focus {
   border-bottom: 1px solid rgba(199, 200, 201, 0.7);
   transition: 0.6s all ease;
 }
-
+/*Diseño de los botones*/
 .button {
   width: 100%;
   height: 30px;
